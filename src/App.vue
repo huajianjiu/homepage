@@ -1,28 +1,45 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- Home -->
+    <home></home>
+    <!-- 导航条 -->
+    <menu-header></menu-header>
+    <!-- 关于我 -->
+    <about-me></about-me>
+    <!-- 项目 -->
+    <project></project>
+    <!-- Research -->
+    <research></research>
+    <!-- Publication -->
+    <publication></publication>
+    <!--Footer-->
+    <footers></footers>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Footers from "./components/Footer.vue"
+import Home from './components/Home.vue'
+import MenuHeader from './components/MenuHeader.vue'
+import AboutMe from './components/AboutMe.vue'
+import Project from './components/Project.vue'
+import Publication from './components/Publication.vue'
+import Research from './components/Research.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MenuHeader,
+    Footers,
+    Home,
+    AboutMe,
+    Project,
+    Research,
+    Publication
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
